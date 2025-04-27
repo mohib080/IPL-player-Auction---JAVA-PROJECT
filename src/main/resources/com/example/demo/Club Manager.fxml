@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ClubManagerController">
+    <children>
+        <ImageView fitHeight="655.0" fitWidth="1103.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logo/ipl_logo.jpg" />
+            </image>
+        </ImageView>
+        <Text fill="#9e1c1c" fontSmoothingType="LCD" layoutX="687.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TATA" textAlignment="CENTER" wrappingWidth="116.0546875">
+            <font>
+                <Font name="Poor Richard" size="33.0" />
+            </font>
+        </Text>
+        <Text layoutX="762.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IPL 2025">
+            <font>
+                <Font name="Ravie" size="31.0" />
+            </font>
+        </Text>
+        <Text layoutX="53.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="194.13671875">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="67.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <PasswordField fx:id="passwordField" layoutX="237.0" layoutY="354.0" onKeyPressed="#onEnterKeyPressed" prefHeight="32.0" prefWidth="208.0" />
+        <Button fx:id="backtoAdminButton" layoutX="775.0" layoutY="626.0" mnemonicParsing="false" onAction="#goBackToAdmin" text="Return to Admin">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <ChoiceBox fx:id="clubChoiceBox" layoutX="172.0" layoutY="284.0" prefHeight="36.0" prefWidth="265.0" style="-fx-font-size: 18px" value="Choose A Club">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Kolkata Knight Riders" />
+                    <String fx:value="Mumbai Indians" />
+                    <String fx:value="Royal Challengers Bangalore" />
+                    <String fx:value="Sunrisers Hyderabad" />
+                    <String fx:value="Rajasthan Royals" />
+                    <String fx:value="Punjab Kings" />
+                    <String fx:value="Delhi Capitals" />
+                    <String fx:value="Lucknow Super Giants" />
+                    <String fx:value="Gujarat Titans" />
+                    <String fx:value="Chennai Super Kings" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+    </children>
+</AnchorPane>

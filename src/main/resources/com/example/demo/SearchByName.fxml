@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextArea?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="655.0" prefWidth="1103.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.SearchByNameController">
+   <children>
+      <Text layoutX="92.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player Name: ">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+
+      <TextField fx:id="playerNameField" style="-fx-font-size: 20px"  onKeyPressed="#onEnterKeyPressed" layoutX="411.0" layoutY="31.0" prefHeight="34.0" prefWidth="530.0" />
+
+      <Button fx:id="backToMainButton" layoutX="979.0" layoutY="593.0" mnemonicParsing="false" text="Back to Main" onAction="#goBackToMain" />
+
+      <HBox fx:id="playerDetailsBox" layoutX="92.0" layoutY="150.0" prefHeight="250.0" prefWidth="900.0" spacing="20.0">
+         <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+         </padding>
+         <children>
+            <ImageView fx:id="playerImage" fitWidth="200" preserveRatio="true" />
+            <TextArea fx:id="playerDetailsArea" editable="false" style="-fx-font-size: 16px;" />
+         </children>
+      </HBox>
+
+   </children>
+</AnchorPane>
