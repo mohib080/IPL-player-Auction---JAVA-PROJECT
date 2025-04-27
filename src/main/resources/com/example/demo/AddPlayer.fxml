@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import java.awt.TextField?>
+<?import jdk.internal.org.commonmark.node.Text?>
+<?import java.awt.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddplayerController">
+    <children>
+        <Text layoutX="84.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player Name: " wrappingWidth="298.13671875">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <TextField fx:id="playerNameField" layoutX="299.0" layoutY="48.0" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+        <Button fx:id="backToMainButton" layoutX="979.0" layoutY="593.0" mnemonicParsing="false" onAction="#goBackToMain" text="Back to Main" />
+      <Text layoutX="84.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Country:" wrappingWidth="149.423828125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Age:" wrappingWidth="149.423828125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Height:" wrappingWidth="149.423828125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Club:" wrappingWidth="149.423828125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Position:" wrappingWidth="221.423828125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Jersey Number:" wrappingWidth="215.423828125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="121.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(in metres)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Optional)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="playerCountryField" layoutX="257.0" layoutY="119.0" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="playerAgeField" layoutX="257.0" layoutY="188.0" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="playerHeightField" layoutX="257.0" layoutY="260.0" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="playerClubField" layoutX="257.0" layoutY="336.0" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="playerPositionField" layoutX="257.0" layoutY="400.0" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="playerJerseyField" layoutX="306.0" layoutY="468.0" onKeyPressed="#onEnterKeyPressed" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+        <TextArea fx:id="playerAddDetails" editable="false" layoutX="711.0" layoutY="337.0" prefHeight="103.0" prefWidth="234.0" wrapText="true" />
+      <Text layoutX="73.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Weekly Salary:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="playerSalaryField" layoutX="299.0" layoutY="544.0" onKeyPressed="#onEnterKeyPressed" prefHeight="35.0" prefWidth="387.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
