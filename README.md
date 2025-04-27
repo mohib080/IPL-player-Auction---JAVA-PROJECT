@@ -53,5 +53,6 @@ Ensure that you have the following installed:
 3. Compile and run the project using your preferred IDE (e.g., IntelliJ IDEA, Eclipse) or from the command line.
 
 ```bash
-javac -cp "path_to_javafx/lib/*" YourMainClass.java
-java -cp ".;path_to_javafx/lib/*" YourMainClass
+javac -cp "C:\javafx-sdk-23\lib\*" Main.java
+java -cp ".;C:\javafx-sdk-23\lib\*" Main
+
