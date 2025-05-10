@@ -1,6 +1,6 @@
 # IPL Player Auction
 
-![Alt text]([image-url](https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/d2004693a143f320680d7291ff371eab/large.png))
+![Alt text]([image-url](https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/d2004693a143f320680d7291ff371eab/large.png)
 ## Project Description
 
 **IPL Player Auction** is a Java-based application that demonstrates the application of networking and multi-threading in real-life scenarios. The system simulates the process of an IPL (Indian Premier League) player auction, where teams can buy and sell players. It consists of two main sections: **Admin** and **Club Manager**.
